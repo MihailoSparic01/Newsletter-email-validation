@@ -1,0 +1,168 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #36384d;
+}
+
+.newsletter {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  background-color: #ffffff;
+  border-radius: 3.6rem;
+  padding: 3.2rem;
+  gap: 6.4rem;
+}
+
+.form {
+  max-width: 37.6rem;
+  align-self: center;
+}
+
+.main-img {
+  max-width: 100%;
+}
+
+.form__heading {
+  font-size: 5.6rem;
+  line-height: 100%;
+  font-weight: bold;
+  color: #242742;
+  margin-bottom: 3.2rem;
+}
+
+.form__paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #242742;
+  margin-bottom: 3.2rem;
+}
+
+.form__list {
+  list-style: none;
+  margin-bottom: 3.2rem;
+}
+
+.form__list-item {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.form__list-item-text {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: #242742;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+label[for="email"] {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 150%;
+  color: #242742;
+}
+
+input[type="email"] {
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: 0.1rem solid #949494;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: #949494;
+  margin-bottom: 2.4rem;
+}
+
+.email-invalid {
+  background-color: #ff605576;
+  color: #ff6155;
+  border: 0.1rem solid #ff6155;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 1.6rem 0;
+  border-radius: 0.8rem;
+  background-color: #242742;
+  color: #ffffff;
+  border: none;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 700;
+}
+
+.btn-valid {
+  background: linear-gradient(to right, #ff6a3a, #ff527b);
+}
+
+/* Success message styles */
+
+.success__message {
+  background-color: #ffffff;
+  border-radius: 3.6rem;
+  padding: 6.4rem;
+  max-width: 50rem;
+  display: none;
+}
+
+.success__message svg {
+  width: 6.4rem;
+  margin-bottom: 3.2rem;
+}
+
+.success__heading {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 100%;
+  margin-bottom: 3.2rem;
+  color: #242742;
+}
+
+.success__text {
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 400;
+  color: #242742;
+  margin-bottom: 3.2rem;
+}
+
+.success__btn {
+  display: block;
+  width: 100%;
+  padding: 1.8rem 0;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #242742;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  line-height: 150%;
+  font-weight: 700;
+}

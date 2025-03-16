@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div class="newsletter">
+      <form class="form">
+        <div class="form__text-content">
+          <h1 class="form__heading">Stay updated!</h1>
+          <p class="form__paragraph">
+            Join 60,000$ product managers receiving monthly updates on:
+          </p>
+          <ul class="form__list">
+            <li class="form__list-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              <p class="form__list-item-text">
+                Product discovery and building what matters
+              </p>
+            </li>
+
+            <li class="form__list-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              <p class="form__list-item-text">
+                Measuring to ensure updates are a success
+              </p>
+            </li>
+
+            <li class="form__list-item">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+              >
+                <g fill="none">
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    stroke="#FFF"
+                    stroke-width="2"
+                    d="M6 11.381 8.735 14 15 8"
+                  />
+                </g>
+              </svg>
+              <p class="form__list-item-text">And much more!</p>
+            </li>
+          </ul>
+        </div>
+        <div class="input-wrapper">
+          <label for="email">Email address</label>
+          <input type="email" id="email" placeholder="email@company.com" />
+        </div>
+        <div>
+          <input
+            type="submit"
+            id="submit"
+            value="Subscribe to monthly newsletter"
+          />
+        </div>
+      </form>
+      <div class="form__image-wrapper">
+        <img
+          src="assets/images/illustration-sign-up-desktop.svg"
+          alt="#"
+          class="main-img"
+        />
+      </div>
+    </div>
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div class="success__message">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="64"
+        height="64"
+        viewBox="0 0 64 64"
+      >
+        <defs>
+          <linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FF6A3A" />
+            <stop offset="100%" stop-color="#FF527B" />
+          </linearGradient>
+        </defs>
+        <g fill="none">
+          <circle cx="32" cy="32" r="32" fill="url(#a)" />
+          <path
+            stroke="#FFF"
+            stroke-width="4"
+            d="m18.286 34.686 8.334 7.98 19.094-18.285"
+          />
+        </g>
+      </svg>
+      <h1 class="success__heading">Thanks for subscribing</h1>
+      <p class="success__text">
+        A confirmation email has been sent to ash@loremcompany.com. Please open
+        it and click the button inside to confirm your subscription.
+      </p>
+      <a href="#" class="success__btn"> Dismiss message </a>
+    </div>
+
+    <!-- Success message end -->
+  </body>
+</html>

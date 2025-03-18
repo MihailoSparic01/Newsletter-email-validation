@@ -2,6 +2,9 @@
 
 const emailInput = document.getElementById("email");
 const submitInput = document.getElementById("submit");
+const newsletterEl = document.getElementById("newsletter");
+const successMessageEl = document.getElementById("success__message");
+const dismissBtn = document.getElementById("dismiss");
 
 emailInput.addEventListener("input", function (e) {
   e.preventDefault();
@@ -22,5 +25,23 @@ emailInput.addEventListener("input", function (e) {
   } else {
     submitInput.classList.add("btn-valid");
     emailInput.classList.remove("email-invalid");
+  }
+});
+
+submitInput.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (submitInput.classList.contains("btn-valid")) {
+    newsletterEl.classList.add("displaynone");
+    successMessageEl.classList.add("displayblock");
+    console.log("t");
+  }
+});
+
+dismissBtn.addEventListener("click", function (e) {
+  e.preventDefault();
+  if (e.target === this) {
+    newsletterEl.classList.remove("displaynone");
+    successMessageEl.classList.remove("displayblock");
+    emailInput.value = "";
   }
 });

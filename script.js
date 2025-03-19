@@ -5,6 +5,7 @@ const submitInput = document.getElementById("submit");
 const newsletterEl = document.getElementById("newsletter");
 const successMessageEl = document.getElementById("success__message");
 const dismissBtn = document.getElementById("dismiss");
+const invalidEmailText = document.getElementById("email-req");
 
 emailInput.addEventListener("input", function (e) {
   e.preventDefault();
@@ -13,6 +14,7 @@ emailInput.addEventListener("input", function (e) {
   const dotIndex = emailInput.value.indexOf(".", indexAt);
   const between = emailInput.value.slice(indexAt + 1, dotIndex);
   const end = emailInput.value.slice(dotIndex + 1);
+
   if (
     !emailInput.value.includes("@") ||
     !emailInput.value.includes(".") ||
@@ -22,9 +24,11 @@ emailInput.addEventListener("input", function (e) {
   ) {
     emailInput.classList.add("email-invalid");
     submitInput.classList.remove("btn-valid");
+    invalidEmailText.style.display = "inline-block";
   } else {
     submitInput.classList.add("btn-valid");
     emailInput.classList.remove("email-invalid");
+    invalidEmailText.style.display = "none";
   }
 });
 
@@ -42,6 +46,7 @@ dismissBtn.addEventListener("click", function (e) {
   if (e.target === this) {
     newsletterEl.classList.remove("displaynone");
     successMessageEl.classList.remove("displayblock");
+    submitInput.classList.remove("btn-valid");
     emailInput.value = "";
   }
 });

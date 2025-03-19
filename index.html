@@ -94,7 +94,10 @@
           </ul>
         </div>
         <div class="input-wrapper">
-          <label for="email">Email address</label>
+          <label for="email"
+            >Email address
+            <span id="email-req">Valid Email required</span></label
+          >
           <input type="email" id="email" placeholder="email@company.com" />
         </div>
         <div>
@@ -106,11 +109,23 @@
         </div>
       </form>
       <div class="form__image-wrapper">
-        <img
-          src="assets/images/illustration-sign-up-desktop.svg"
-          alt="#"
-          class="main-img"
-        />
+        <picture>
+          <source
+            srcset="assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 56.25em)"
+            alt="test"
+          />
+          <source
+            srcset="assets/images/illustration-sign-up-mobile.svg"
+            media="(max-width: 51.25em )"
+            alt="test2"
+          />
+          <img
+            src="assets/images/illustration-sign-up-desktop.svg"
+            alt="#"
+            class="main-img"
+          />
+        </picture>
       </div>
     </div>
     <!-- Sign-up form end -->

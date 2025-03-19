@@ -85,6 +85,13 @@ label[for="email"] {
   font-weight: 700;
   line-height: 150%;
   color: #242742;
+  display: flex;
+  justify-content: space-between;
+}
+
+#email-req {
+  color: #ff527b;
+  display: none;
 }
 
 input[type="email"] {
@@ -173,4 +180,15 @@ input[type="submit"] {
 
 .displayblock {
   display: block;
+}
+
+@media screen and (max-width: 51.25em) {
+  .newsletter {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .form__image-wrapper {
+    order: -1;
+  }
 }

@@ -208,9 +208,18 @@ input[type="submit"] {
   .form {
     padding: 0 2.4rem 4rem 2.4rem;
   }
+
+  .main-img {
+    backface-visibility: hidden;
+    max-width: 100%;
+    width: 100%;
+  }
+
   .newsletter {
     padding: 0rem;
+    border-radius: 0;
   }
+
   .form__heading {
     font-size: 4rem;
     line-height: 100%;
@@ -218,5 +227,9 @@ input[type="submit"] {
 
   input[type="submit"] {
     padding: 1.6rem 4.8rem;
+  }
+
+  .success__btn:active {
+    background: linear-gradient(to right, #ff6a3a, #ff527b);
   }
 }

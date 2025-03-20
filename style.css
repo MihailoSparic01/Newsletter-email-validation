@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,9 +186,37 @@ input[type="submit"] {
   .newsletter {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
+    gap: 4rem;
   }
 
   .form__image-wrapper {
     order: -1;
+  }
+
+  .form__heading,
+  .form__paragraph,
+  .form__list {
+    margin-bottom: 2.4rem;
+  }
+
+  input[type="email"] {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 26.25em) {
+  .form {
+    padding: 0 2.4rem 4rem 2.4rem;
+  }
+  .newsletter {
+    padding: 0rem;
+  }
+  .form__heading {
+    font-size: 4rem;
+    line-height: 100%;
+  }
+
+  input[type="submit"] {
+    padding: 1.6rem 4.8rem;
   }
 }

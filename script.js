@@ -37,7 +37,10 @@ submitInput.addEventListener("click", function (e) {
   if (submitInput.classList.contains("btn-valid")) {
     newsletterEl.classList.add("displaynone");
     successMessageEl.classList.add("displayblock");
-    console.log("t");
+    let succesMessage = (document.querySelector(
+      ".success__text"
+    ).innerHTML = `A confirmation email has been sent to ${emailInput.value} Please open
+        it and click the button inside to confirm your subscription.`);
   }
 });
 

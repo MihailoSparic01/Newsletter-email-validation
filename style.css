@@ -13,9 +13,9 @@ html {
 }
 
 body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
   background-color: #36384d;
   padding: 5rem;
 }
